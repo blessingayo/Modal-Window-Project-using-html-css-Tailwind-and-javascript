@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Modal Window</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="font-Poppins h-screen relative flex items-start justify-center my-4"
+  >
+    <button
+      class="
+        show-modal
+        m-14
+        p-8
+        h-20
+        w-30
+        bg-white
+        rounded-md
+        text-center
+        hover:bg-gray-200
+        text-blue-800 text-lg
+      "
+    >
+      Show modal 1
+    </button>
+    <button
+      class="
+        show-modal
+        m-14
+        p-8
+        h-20
+        w-30
+        bg-white
+        rounded-md
+        text-center
+        hover:bg-gray-200
+        text-blue-800 text-lg
+      "
+    >
+      Show modal 2
+    </button>
+    <button
+      class="
+        show-modal
+        m-14
+        p-8
+        h-20
+        w-30
+        bg-white
+        rounded-md
+        text-center
+        hover:bg-gray-200
+        text-blue-800 text-lg
+      "
+    >
+      Show modal 3
+    </button>
+
+    <div class="modal hidden">
+      <button
+        class="
+          close-modal
+          absolute
+          top-6
+          right-8
+          text-7xl gtext-black
+          cursor-pointer
+          border-none
+          bg-none
+        "
+      >
+        &times;
+      </button>
+      <h1 class="mb-10 text-4xl">I'm a modal window</h1>
+
+      <p class="text-2xl">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+        perferendis laboriosam nemo eligendi nesciunt molestias commodi placeat
+        quasi, repellendus beatae eaque velit error, impedit nam tempora.
+        Laboriosam, odio unde quod consectetur mollitia minus nulla maiores ea
+        veritatis ducimus delectus aperiam eaque? Quam perferendis quidem
+        molestiae dolor libero repellendus molestias abobcaecati id, ullam
+        totam, error excepturi tempore sequi quae illo.
+      </p>
+    </div>
+
+    <div
+      class="
+        overlay
+        hidden
+        top-0
+        left-0
+        w-full
+        h-full
+        bg-black
+        backdrop-blur-3xl
+      "
+    ></div>
+    <script src="script.js"></script>
+  </body>
+</html>
